@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebistOne</title>
+    <!-- AOS Link Animation lib -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CDN JS And CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
+        defer></script>
+
+    <!-- CDN Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="" style="background-color: antiquewhite;">
+    <!-- Section 1: Header -->
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="col-md-6 text-md-start text-center mb-3 mt-lg-3 fs-6 ">
+                Pitch
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex justify-content-md-end justify-content-center align-items-center">
+                <span class="text-md-end text-center me-md-3 mb-3 mt-lg-3">Free Shipping on all intl. Orders over PKR
+                    300</span>
+                <form class="d-flex ">
+                    <input id="sea" class="form-control me-2 bg-transparent border-1" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <span class="input-group-text border-0 bg-transparent"><i class="fas fa-search"></i></span>
+                </form>
+            </div>
+        </div>
+        <hr class="w-100 border border-1 border-dark">
+    </div>
+    <!-- End Section 1: Header -->
+
+    <!-- Section 2: Navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container ">
+            <!-- logo -->
+            <a class="navbar-brand fs-4 " href="#">Pitch</a>
+
+            <!-- toggle_btn -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <!-- sidebar_header -->
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pitch</h5>
+                    <button type="button" class="btn-close btn-outline-secondary shadow-none"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <!-- side_body -->
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                    <ul class="navbar-nav  justify-content-center align-items-center fs-5 pe-3 pe-lg-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="#shopall">Shop all</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#Kitchen">Kitchen</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#bath">Bath</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#onthego">On the Go</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+                    <div
+                        class="offcanvas-icons d-flex flex-lg-row  flex-md-row flex-column justify-content-center align-items-center gap-4">
+                        <i class="fa-solid  fa-circle-user fa-lg "></i>
+                        <a href="#">Login</a>
+                        <i class="fa-solid fa-heart  fa-lg"></i>
+                        <i class="fa-solid fa-bag-shopping  fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Section 2 -->
+
+    <!-- section3: Home start -->
+    <div class="container-fluid   mt-3 mb-3" data-aos="fade-up" style="height: 40.625rem;">
+        <div class="row home">
+            <!-- leftside -->
+            <div class="col-lg-6 col-md-3 leftside mt-2">
+                <p class="mt-auto">REUSE. REPURPOSE. RELOVE.</p>
+                <!-- carousel -->
+                <div id="carouselExampleSlidesOnly" class="carousel slide mt-auto" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://images.pexels.com/photos/9859324/pexels-photo-9859324.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                                class="d-block w-50" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.pexels.com/photos/11213152/pexels-photo-11213152.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                                class="d-block w-50" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.pexels.com/photos/10475606/pexels-photo-10475606.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                                class="d-block w-50" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <span>Shop all</span><i class="fa-solid fa-arrow-right fa-1x"></i>
+                </div>
+                <div data-aos="fade-up">
+                    <h1 class="mt-1">Pitch</h1>
+                </div>
+            </div>
+
+            <!-- rightside -->
+            <div class="col-lg-6 col-md-3 SideImg">
+                <img src="https://images.pexels.com/photos/7771968/pexels-photo-7771968.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="w-75 h-75" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <!-- section3: Home end -->
+
+    <!-- section 4 : infromation start -->
+    <div class="container m-auto mt-4 mb-3" data-aos="fade-up">
+        <div class="row">
+            <div class="col-md-6 col-sm-3 mt-5  description m-auto">
+                <h4>PRODUCTS &nbsp; OF &nbsp; THE &nbsp; HIGHEST &nbsp; STANDARDS</h4>
+                <h1>Essential &nbsp; home &nbsp; collections &nbsp; for &nbsp; &nbsp; &nbsp; &nbsp;sustainable &nbsp;
+                    living
+                </h1>
+                <div class="mt-4">
+                    <span>Shop Collections</span><i class="fa-solid fa-arrow-right fa-1x"></i>
+                </div>
+            </div>
+            <!-- cards -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-5" data-aos="flip-left">
+                <div class="col">
+                    <div class="card h-100 position-relative border-0 shadow-lg">
+                        <img src="https://images.pexels.com/photos/7879910/pexels-photo-7879910.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                            alt="..." class="card-img-top">
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h5 class="card-title text-center text-white bg-transparent">Kitchen</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 position-relative border-0 shadow-lg">
+                        <img src="https://images.pexels.com/photos/5420478/pexels-photo-5420478.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                            alt="..." class="card-img-top">
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h5 class="card-title text-center text-white bg-transparent">Bath</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 position-relative border-0 shadow-lg">
+                        <img src="https://images.pexels.com/photos/13524365/pexels-photo-13524365.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                            alt="..." class="card-img-top">
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h5 class="card-title text-center text-white bg-transparent">On the Go</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other cards -->
+            </div>
+        </div>
+    </div>
+
+    <!-- section 4 : infromation end -->
+
+    <!-- section 5:   New IN Start  -->
+    <div class="container-fluid newin mt-5  rounded p-4 " data-aos="zoom-in" data-aos="fade-up">
+
+        <div class="row row-cols-1 row-cols-md-3 g-3 bg-transparent p-4">
+            <h1 class="bg-transparent">New In</h1>
+            <h3 class="bg-transparent text-lg-center">
+                Embrace a sustainable lifestyle with
+                our newest drop-ins.</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-2 bg-transparent border-0">
+            <div class="col bg-transparent border-0" data-aos="zoom-in-right">
+                <div class="card h-100 border-0 rounded-0  bg-transparent">
+                    <img src="https://images.pexels.com/photos/7879828/pexels-photo-7879828.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                        class="card-img-top" alt="...">
+                    <div class="card-body newtext bg-transparent">
+                        <h5 class="card-title bg-transparent">Wooden Foot File</h5>
+                        <p class="card-text bg-transparent">PKR 500</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col bg-transparent" data-aos="zoom-in-right">
+                <div class="card h-100 border-0 rounded-0 bg-transparent">
+                    <img src="https://images.pexels.com/photos/4857199/pexels-photo-4857199.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                        class="card-img-top" alt="...">
+                    <div class="card-body newtext bg-transparent">
+                        <h5 class="card-title bg-transparent">Cutlery Set</h5>
+                        <p class="card-text bg-transparent">PKR 5500</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col bg-transparent">
+                <div class="card h-100  border-0  rounded-0 bg-transparent" data-aos="zoom-in-right">
+                    <img src="https://images.pexels.com/photos/7500305/pexels-photo-7500305.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                        class="card-img-top" alt="...">
+                    <div class="card-body newtext bg-transparent">
+                        <h5 class="card-title bg-transparent">Kitchen Sponges</h5>
+                        <p class="card-text bg-transparent">PKR 2500</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col bg-transparent">
+                <div class="card h-100 border-0 rounded-0 bg-transparent" data-aos="zoom-in-right">
+                    <img src="https://images.pexels.com/photos/13760293/pexels-photo-13760293.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                        class="card-img-top" alt="...">
+                    <div class="card-body newtext bg-transparent">
+                        <h5 class="card-title bg-transparent">Truth Brush</h5>
+                        <p class="card-text bg-transparent">PKR 1500</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section 5 :  New IN end -->
+
+    <!-- section 6 :  Mission Start -->
+
+
+    <div class="container-fluid p-0 mission" data-aos="fade-up">
+        <div class="row">
+            <div class="col-lg-5 col-md-4" style="height: 600px; padding: 0;">
+                <img src="Image/Mission.jpeg" alt="" class="card-img-top img-fluid rounded-0 border-0  w-100"
+                    style="height: 100%;">
+            </div>
+            <div class="col-lg-7 col-md-4">
+                <h1 class="p-3">The Pitch Mission</h1>
+                <h3 class="p-3">We believe in ethical and smart shopping. All of our products are carefully
+                    selected
+                    to ensure they
+                    align with our core values.</h3>
+                <div class="mt-5 p-0 m-0 d-flex justify-content-evenly" data-aos="fade-up">
+                    <img src="Image/icons/bag.png" style="width: 5%; height: 5%;" alt="">
+                    <img src="Image/icons/recycle-bin.png" style="width: 5%; height: 5%;" alt="">
+                    <img src="Image/icons/plant-based.png" style="width: 5%; height: 5%;" alt="">
+                    <img src="Image/icons/favorite.png" style="width: 5%; height: 5%;" alt="">
+                </div>
+                <div class="mt-5 d-flex justify-content-evenly icons_Name" data-aos="fade-down-right">
+                    <h3>Sustainable
+                        <br> Materials
+                    </h3>
+                    <h3>Zero
+                        <br> Waste
+                    </h3>
+                    <h3>Vegan</h3>
+                    <h3>Fair
+                        <br> Trade
+                    </h3>
+                </div>
+                <div class="mt-5">
+                    <span>Learn More</span><i class="fa-solid fa-arrow-right fa-1x"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section 6 :  Mission End -->
+
+
+    <!-- section7:Best Seller Start -->
+    <div class="container-fluid best_Seller  mt-5  rounded p-4 " data-aos="zoom-in" data-aos="fade-up">
+
+        <div class="row row-cols-1 row-cols-md-3 g-3  p-4">
+            <h1>Best Seller</h1>
+            <h3 class="text-lg-center">
+                When quality is eco-friendly. Explore our top picks.</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-2  border-0">
+            <div class="col border-0" data-aos="fade-up">
+                <div class="card h-100 border-0 rounded-0  ">
+                    <img src="Image/Best1.jpeg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col border-0" data-aos="fade-up">
+                <div class="card h-100 border-0 rounded-0  ">
+                    <img src="Image/Bes2.jpeg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col border-0" data-aos="fade-up">
+                <div class="card h-100 border-0 rounded-0  ">
+                    <img src="Image/best3.jpeg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col border-0" data-aos="fade-up">
+                <div class="card h-100 border-0 rounded-0  ">
+                    <img src="Image/best4.jpeg" class="card-img-top" alt="...">
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    </div>
+    <!-- section7:Best Seller end -->
+
+    <!-- section8: slider  Start -->
+    <div class="container-fluid bg-transparent mb-3">
+        <div class="row slider_section p-5">
+            <h2 class="bg-transparent mb-3">As a Seen</h2>
+            <div class="col bg-transparent">
+                <div class="slider bg-transparent">
+                    <div class="slide-track bg-transparent p-4 ">
+                        <div class="slide bg-transparent ">
+                            <img src="Image/12.webp" alt="" class="  bg-transparent">
+                        </div>
+                        <div class="slide bg-transparent">
+                            <img src="Image/13.webp" alt="" class="  bg-transparent">
+                        </div>
+                        <div class="slide bg-transparent">
+                            <img src="Image/14.webp" alt="" class=" bg-transparent">
+                        </div>
+                        <div class="slide bg-transparent">
+                            <img src="Image/15.webp" alt="" class="  bg-transparent">
+                        </div>
+                        <div class="slide bg-transparent ">
+                            <img src="Image/16.webp" alt="" class=" bg-transparent">
+                        </div>
+                        <div class="slide bg-transparent">
+                            <img src="Image/17.webp" alt="" class="  bg-transparent">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section8 : slider End-->
+
+    <!-- section:09 Footer start -->
+    <div class="container-fluid ">
+        <div class="row w-100 p-4 m-auto">
+            <div class="col-5 d-flex justify-content-evenly p-4 leftsidefooter">
+                <div class="col">
+                    <ul class="list-unstyled">
+                        <li>Shop All</li>
+                        <li>Kitchen</li>
+                        <li>Bath</li>
+                        <li>On the Go</li>
+                        <li>New In</li>
+                        <li>Best Seller</li>
+                        <li>About Us</li>
+                        <li>Gifts Card</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled">
+                        <li>Facbook</li>
+                        <li>Linkedin</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="col ">
+                    <ul class="list-unstyled">
+                        <li>Term & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Shipping Policy</li>
+                        <li>Refunds Policy</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-7 rightsidefooter p-4">
+                <h1>Stay inspired and eco-conscious</h1>
+                <p>Receive the latest trends and tips on eco-friendly designs,<br> sustainable living, zero waste and
+                    eco-conscious practices.</p>
+                <form action="">
+                    <div>
+                        <label for="email">Email *</label><br>
+
+                    </div>
+                    <div>
+                        <input type="text" class="border-0  border-bottom border-dark w-75">
+                    </div>
+                    <div></div>
+                    <input type="checkbox" class="mt-5"> Subcribe me to your newletters
+                    <input type="submit" value="submit">
+            </div>
+
+            </form>
+        </div>
+        <div class="row footername d-flex justify-content-between">
+            <div class="col">
+                <h1>Pitch</h1>
+            </div>
+            <div class="col">
+                <p class="mt-5">&copy2024 by pitch. Made with Momal Sadhwani</p>
+            </div>
+        </div>
+    </div>
+    <!-- section:09 Footer end -->
+
+
+
+
+
+
+
+
+
+
+    <!-- OAS JS Data Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  color: #20303c;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: 400;
+  /* height: 100%; */
+  /* line-height: 1.5; */
+  /* width: 100%; */
+}
+
+/*section-1 Start  */
+.submit:hover {
+  color: white;
+  background-color: rgb(238, 176, 113);
+  padding: 3px;
+}
+input::placeholder {
+  color: black;
+  font-size: 17px;
+  font-weight: 700;
+}
+/*section-1 End  */
+
+/* section-2:Navbar starting */
+.navbar a {
+  color: black;
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: black;
+}
+.offcanvas-header {
+  border-bottom: 2px solid black;
+}
+
+.offcanvas-body {
+  margin-left: 250px;
+}
+
+.offcanvas-icons {
+  margin-left: 200px;
+}
+
+/* section-2:Navbar Ending */
+
+/* section3 home start */
+
+.home p {
+  text-align: center;
+  margin-top: 20px;
+}
+.carousel {
+  margin-left: 250px;
+}
+
+.leftside span {
+  text-align: center;
+  /* margin-top: 15px; */
+  margin-left: 250px;
+}
+.leftside i {
+  margin-left: 50px;
+}
+
+.leftside h1 {
+  text-align: center;
+  font-size: 77pt;
+}
+.description h4,
+.description h1 {
+  text-transform: capitalize;
+  text-shadow: #20303c;
+}
+.description h4 {
+  margin-left: 50px;
+}
+
+.description span {
+  margin-left: 175px;
+}
+
+.description i {
+  margin-left: 45px;
+}
+
+/* section3 home end */
+
+/* section:04 cards start*/
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale3d(1.05, 1.05, 1);
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.card:hover .card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.5s ease;
+}
+
+.card:hover .card-img-overlay {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.348);
+}
+
+.card-title {
+  font-size: 3.5rem;
+  /* font-weight: 700; */
+  font-style: italic;
+}
+
+/* section:04 cards end*/
+
+/* sectio:05 new in starting */
+.newin {
+  background-color: rgb(218, 178, 138);
+}
+
+.newtext h5,
+.newtext p {
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+}
+
+.newin h1 {
+  font-style: italic;
+  margin: 25px;
+}
+/* sectio:05 new in ending */
+/* sectio:06 mission start */
+.mission {
+  text-align: center;
+}
+
+.mission h1,
+.mission h3 {
+  margin-top: 50px;
+}
+
+.icons_Name h3 {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  margin-right: 40px;
+}
+
+.mission span {
+  font-size: 20px;
+  margin: 15px;
+}
+/* sectio:06 mission end */
+
+/* section 7 : best seller starting */
+.best_Seller h5 {
+  font-size: large;
+}
+/* section 7 : best seller ending */
+
+/* section 8 : slider starting */
+
+.slider_section {
+  background-color: rgba(228, 189, 150, 0.872);
+}
+
+.slider_section h2 {
+  color: black;
+  font-size: 40px;
+  font-weight: 500;
+  font-style: inherit;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+/* section 8 : slider ending */
+
+/* section 9 : Footer Starting */
+
+ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.rightsidefooter h1 {
+  font-size: 25px;
+}
+
+.rightsidefooter h1,
+.rightsidefooter p,
+.rightsidefooter form {
+  margin-left: 15px;
+}
+
+.rightsidefooter input[type="submit"] {
+  margin-left: 155px;
+  padding: 10px;
+  width: 20%;
+  border-radius: 40px;
+}
+
+.footername h1 {
+  margin-left: 75px;
+  font-size: 100px;
+  font-style: initial;
+}
+/* section 9 : Footer ending */
